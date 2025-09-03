@@ -13,3 +13,4 @@ touch job_search_assistant/utils/{__init__.py,resume_parser.py,job_scraper.py}
 
 pip install spacy
 python -m spacy download en_core_web_lg
+# depoy_guide
