@@ -15,3 +15,8 @@ pip install spacy
 python -m spacy download en_core_web_lg
 # depoy_guide
 # depoy_guide
+
+
+#
+
+ #   725726880674.dkr.ecr.us-east-2.amazonaws.com/streamlit-app
