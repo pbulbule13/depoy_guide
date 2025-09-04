@@ -13,6 +13,7 @@ from langchain.llms import OpenAI
 from config import OPENAI_API_KEY
 
 # Load spaCy model
+#adding the text to confirm the changes
 try:
     nlp = spacy.load("en_core_web_lg")
 except:
