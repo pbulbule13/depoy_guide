@@ -56,6 +56,8 @@ FROM langchain/langchain:latest
 
 WORKDIR /app
 
+RUN pip install streamlit python-dotenv PyPDF2 faiss-cpu spacy
+
 # Only install what's missing
 RUN pip install streamlit python-dotenv
 
