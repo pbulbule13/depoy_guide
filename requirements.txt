@@ -7,7 +7,7 @@
 # spacy==3.7.4
 # openai==1.35.0
 # PyPDF2==3.0.1
-# python-dotenv==1.0.0 
+# python-dotenv==1.0.0  we have been making changes 
 streamlit
 langchain
 langchain-community
