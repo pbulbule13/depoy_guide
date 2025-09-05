@@ -1,6 +1,6 @@
 Copy
 .git
-.github
+# .github
 .gitignore
 README.md
 *.pyc
