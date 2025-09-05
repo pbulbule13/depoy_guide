@@ -4,12 +4,15 @@ import spacy
 import os
 import tempfile
 import re
-from langchain.document_loaders import PyPDFLoader
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+# UPDATED LANGCHAIN IMPORTS
+from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.vectorstores import FAISS
+from langchain_openai import OpenAIEmbeddings
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.chains import RetrievalQA
-from langchain.llms import OpenAI
+from langchain_openai import OpenAI
+
 from config import OPENAI_API_KEY
 
 # Load spaCy model
