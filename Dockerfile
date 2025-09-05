@@ -1,24 +1,24 @@
-FROM python:3.10-slim
+#FROM python:3.10-slim
+FROM python:3.9.18-slim
 
 WORKDIR /app
 
 # Update pip first
 RUN pip install --upgrade pip
 
+RUN pip install --no-cache-dir faiss-cpu==1.7.4 spacy==3.7.2
 # Install system dependencies if needed
 RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first for better caching
 COPY requirements.txt .
-
-# Install Python packages with dependency resolution
 RUN pip install --no-cache-dir -r requirements.txt
 
+
 # Download spaCy model
-RUN python -m spacy download en_core_web_lg
+# RUN python -m spacy download en_core_web_lg
 
 # Copy application code
 COPY . .

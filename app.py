@@ -224,7 +224,7 @@ border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1)
     <span style='background-color: rgba(0,0,0,0.15); padding: 4px 12px; border-radius: 20px; margin: 0 5px;'>
     AI-powered job search</span> 
     <span style='background-color: rgba(0,0,0,0.15); padding: 4px 12px; border-radius: 20px; margin: 0 5px;'>
-    Resume analysis</span> 
+    Resume analysis1</span> 
     <span style='background-color: rgba(0,0,0,0.15); padding: 4px 12px; border-radius: 20px; margin: 0 5px;'>
     Interview preparation</span>
     </p>
@@ -245,7 +245,7 @@ if "saved_jobs" not in st.session_state:
 
 # Create main navigation tabs
 tabs = st.tabs([
-    "📄 Resume Analysis", 
+    "📄 Resume Analysis1", 
     "🔍 Job Search", 
     "🎯 Interview Preparation", 
     "💼 Saved Jobs"

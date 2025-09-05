@@ -1,22 +1,21 @@
-# streamlit==1.32.0
-# langchain==0.2.11
-# langchain-community==0.2.11
-# langchain-openai==0.1.19
-# langchain-text-splitters==0.2.11
-# faiss-cpu==1.8.0
-# spacy==3.7.4
-# openai==1.35.0
-# PyPDF2==3.0.1
-# python-dotenv==1.0.0  we have been making changes 
-langchain-core>=0.2.38
-langchain-community>=0.2.16
-langchain>=0.2.16
-langchain-openai>=0.1.20
-langchain-text-splitters>=0.2.0
-pydantic>=2.0,<3.0
-openai
-faiss-cpu==1.8.0
-spacy==3.7.4
-openai==1.35.0
+
+# Stable LangChain deployment requirements - tested combination
+langchain-core==0.1.52
+langchain-community==0.0.38
+langchain==0.1.17
+langchain-openai==0.1.8
+langchain-text-splitters==0.0.1
+
+# Core dependencies - pinned for stability
+pydantic==2.5.3
+openai==1.12.0
+faiss-cpu==1.7.4
+spacy==3.7.2
 PyPDF2==3.0.1
 python-dotenv==1.0.0
+
+# Additional stable dependencies
+numpy==1.24.3
+requests==2.31.0
+aiohttp==3.9.3
+typing-extensions==4.9.0
