@@ -8,10 +8,12 @@
 # openai==1.35.0
 # PyPDF2==3.0.1
 # python-dotenv==1.0.0  we have been making changes 
-streamlit
-langchain
-langchain-community
-langchain-openai
+langchain-core>=0.2.38
+langchain-community>=0.2.16
+langchain>=0.2.16
+langchain-openai>=0.1.20
+langchain-text-splitters>=0.2.0
+pydantic>=2.0,<3.0
 openai
 faiss-cpu==1.8.0
 spacy==3.7.4
