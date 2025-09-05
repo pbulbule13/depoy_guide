@@ -1,24 +1,31 @@
-#FROM python:3.10-slim
-FROM python:3.9.18-slim
+# #FROM python:3.10-slim
+# FROM python:3.9.18-slim
 
-WORKDIR /app
+# WORKDIR /app
 
-# Update pip first
-RUN pip install --upgrade pip
+# # Update pip first
+# RUN pip install --upgrade pip
 
-RUN pip install --no-cache-dir faiss-cpu==1.7.4 spacy==3.7.2
-# Install system dependencies if needed
-RUN apt-get update && apt-get install -y \
-    gcc \
-    g++ \
-    && rm -rf /var/lib/apt/lists/*
+# RUN pip install --no-cache-dir faiss-cpu==1.7.4 spacy==3.7.2
+# # Install system dependencies if needed
+# RUN apt-get update && apt-get install -y \
+#     gcc \
+#     g++ \
+#     && rm -rf /var/lib/apt/lists/*
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# COPY requirements.txt .
+# RUN pip install --no-cache-dir -r requirements.txt
 
 
-# Download spaCy model
+# # Download spaCy model
 # RUN python -m spacy download en_core_web_lg
+
+FROM langchain/langchain:latest
+COPY . /app
+WORKDIR /app
+RUN pip install streamlit python-dotenv
+CMD ["streamlit", "run", "app.py"]
+
 
 # Copy application code
 COPY . .
