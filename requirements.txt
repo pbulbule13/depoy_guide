@@ -9,11 +9,10 @@
 # PyPDF2==3.0.1
 # python-dotenv==1.0.0 
 streamlit==1.32.0
-langchain-core==0.3.75
-langchain-text-splitters==0.3.11
-langchain-community==0.3.11
-langchain==0.3.11
-langchain-openai==0.2.5
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-openai==0.1.23
+langchain-text-splitters==0.2.4
 faiss-cpu==1.8.0
 spacy==3.7.4
 openai==1.35.0
